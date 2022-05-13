@@ -1,0 +1,287 @@
+/* CODIGO CSS */
+/* selector {
+    propiedad1: valor;
+    propiedad2: valor;
+    */
+    
+
+@media screen and (max-width: 980px){
+    #header{
+        width: 90%;
+    }
+    #contenido{
+        width: 60%;
+}
+@media screen and (max-width: 480px){
+        #header{
+            height: auto;
+        }
+        #contenido{
+            width: auto;
+        }
+       
+    * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.contenedor {
+	background:#ccc;
+	width:90%;
+	max-width:1000px;
+	margin:auto;
+
+	/* Flexbox */
+	display:flex;
+	flex-flow:row wrap;
+}
+
+body {
+background-color: gray;
+}
+header {
+	background:#2c3e50;
+	width:100%;
+	padding:20px;
+
+	/* Flexbox */
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+header .logo {
+	color:#fff;
+	font-size:30px;
+}
+
+header .logo img {
+	width:50px;
+	vertical-align: top;
+}
+
+header .logo a {
+	color:#fff;
+	text-decoration: none;
+	line-height:50px;
+}
+
+header nav {
+	width:50%;
+	/* Flexbox */
+
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+}
+
+header nav a {
+	background:#c0392b;
+	color:#fff;
+	text-align: center;
+	text-decoration: none;
+	padding:10px;
+
+	/* Flexbox */
+	flex-grow:1;
+}
+header{
+    background-color: #111;
+    color: aliceblue;
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+
+}
+.imagenBarra{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+
+    ;
+}
+.barramenu{
+    background-color: #333;
+    text-overflow: clip;
+    width: 100%;
+    height: 20;
+    border: 0%;
+    margin: 0%;
+    border-color: #333;
+
+}
+.barraMenu_cuadro{
+    width: 25%;
+    height: 20;
+    border: 10%;
+    margin: 10%;
+    border-color: #333;
+}
+.barramenu_boton {
+    display: block;
+    width: 20%;
+    height: 15%;
+    background-size: contain;
+    background-color: #555;
+}
+h1 {
+    color: black;
+    font-size: 30;
+    font-family: 'Inter', sans-serif;
+}
+h2 { color: azure;
+    font-size: 100;
+    font-family: 'Inter', sans-serif;
+
+}
+.titulo {
+    color: azure;
+    font-size: 50;
+    font-family: 'Inter', sans-serif;
+}
+Formulario
+ul {
+    border: 1px solid #555;
+}
+
+li {
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color:grey;
+}
+.active {
+    background-color: #645e5e;
+}
+
+barra
+head {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+div {
+    float: left;
+}
+
+div a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+div a:hover {
+    background-color: #111;
+}
+footer {
+	background:#2c3e50;
+	width: 100%;
+	padding:20px;
+
+	/* Flexbox */
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+
+footer .links {
+	background:#c0392b;
+	display:flex;
+	flex-wrap:wrap;
+}
+
+footer .links a {
+	flex-grow:1;
+
+	color:#fff;
+	padding:10px;
+	text-align: center;
+	text-decoration:none;
+}
+
+footer .links a:hover {
+	background:#E74C3C;
+}
+
+footer .social {
+	background:#e67e22;
+}
+
+footer .social a {
+	color:#fff;
+	text-decoration: none;
+	padding:10px;
+	display: inline-block;
+}
+
+@media screen and (max-width: 800px) {
+	.contenedor {
+		flex-direction:column;
+	}
+
+	header {
+		flex-direction:column;
+		padding:0;
+	}
+
+	header .logo {
+		margin:20px 0;
+	}
+
+	header nav {
+		width: 100%;
+	}
+
+	section {
+		flex-direction:row;
+		flex:0;
+	}
+
+	section .widget {
+		flex-grow:1;
+	}
+
+@media screen and (max-width: 600px) {
+	section {
+		flex-direction:column;
+	}
+
+	footer {
+		justify-content:space-around;
+	}
